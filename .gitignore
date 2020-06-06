@@ -1,0 +1,6 @@
+# Linkedin-api
+linkedin_api/
+.env
+
+# Dev
+/.ipynb_checkpoints
