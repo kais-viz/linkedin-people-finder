@@ -4,3 +4,8 @@ linkedin_api/
 
 # Dev
 /.ipynb_checkpoints
+
+# Diskcache
+/cache.db
+/cache.db-shm
+/cache.db-wal
