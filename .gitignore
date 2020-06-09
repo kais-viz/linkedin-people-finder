@@ -9,3 +9,6 @@ linkedin_api/
 /cache.db
 /cache.db-shm
 /cache.db-wal
+
+#utils
+/utils/__pycache_/
