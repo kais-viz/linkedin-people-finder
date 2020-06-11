@@ -1,2 +1,2 @@
 # linkedin-people-finder
-Get a list of people based on the current jobs they hold to curate a list of companies for possible job applications
+Scripts to scrap linkedin for users matching certain job titles and the company they work in.
