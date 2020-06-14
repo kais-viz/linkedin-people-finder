@@ -29,7 +29,7 @@ def chk_match(experiences, verbose=False, MAX_COMPANY_SIZE =  450):
                 else "?"
             )
             locationName = exp.get("locationName", "unknown")
-            companyId = exp.get("geoUrn", None)
+            companyId = exp.get('companyUrn', None)
             startDate = (
                 exp["timePeriod"].get("startDate", "?")
                 if "timePeriod" in exp
@@ -46,12 +46,12 @@ def chk_match(experiences, verbose=False, MAX_COMPANY_SIZE =  450):
                     "\n---\n{} @ {} ({})\n{}, size {}\nfrom {} to {}\nid: {}".format(
                         exp["title"],
                         companyName,
+                        companyId,
                         industries,
                         locationName,
                         companySize,
                         startDate,
-                        endDate,
-                        companyId
+                        endDate
                     )
                 )
                 
