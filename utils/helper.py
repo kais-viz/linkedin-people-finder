@@ -3,7 +3,7 @@ import re
 
 # Extracts digits from string and return the first set found                
 def get_id_from_str(exp):
-    return re.findall(r'\d+', exp.get("geoUrn"))[0] if exp.get("geoUrn", None) else None
+    return re.findall(r'\d+', exp.get("companyUrn"))[0] if exp.get("geoUrn", None) else None
     
 # Main filtering function, prints/extracts matches:
 # Returns last experience in the profile, set verbose to True to print output
@@ -46,12 +46,12 @@ def chk_match(experiences, verbose=False, MAX_COMPANY_SIZE =  450):
                     "\n---\n{} @ {} ({})\n{}, size {}\nfrom {} to {}\nid: {}".format(
                         exp["title"],
                         companyName,
-                        companyId,
                         industries,
                         locationName,
                         companySize,
                         startDate,
-                        endDate
+                        endDate,
+                        companyId
                     )
                 )
                 
