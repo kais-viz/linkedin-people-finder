@@ -4,11 +4,12 @@ linkedin_api/
 
 # Dev
 /.ipynb_checkpoints
+/9a
 
 # Diskcache
 /cache.db
 /cache.db-shm
 /cache.db-wal
 
-#utils
-/utils/__pycache_/
+# utils
+/utils/__pycache__/
